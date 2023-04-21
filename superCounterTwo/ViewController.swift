@@ -21,6 +21,20 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func reset(_ sender: Any) {
+        a = 0
+        viewDidLoad()
+    }
+    
+    @IBAction func plus(_ sender: Any) {
+        a += 0
+        viewDidLoad()
+    }
+    
+    @IBAction func minus(_ sender: Any) {
+        a -= 0
+        viewDidLoad()
+    }
+    
 }
 
