@@ -9,9 +9,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var counter: UILabel! // поле счетчика
-    @IBOutlet weak var history: UITextField! // текстовое поле истории изменений
-    @IBOutlet weak var reset: UIButton! // кнопка обнуления
+    @IBOutlet weak var counter: UILabel! // counter field
+    @IBOutlet weak var history: UITextField! // change history text field
+    @IBOutlet weak var reset: UIButton! // reset button
     @IBOutlet weak var minus: UIButton! //button to reduce the counter
     @IBOutlet weak var plus: UIButton! // add counter button
     var a = 0 // variable for the counter
