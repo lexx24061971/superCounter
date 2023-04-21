@@ -51,6 +51,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="RESET TO ZERO">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gY0-HN-RLS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qcd-p1-aKc">
                                 <rect key="frame" x="288" y="708" width="89" height="110"/>
@@ -60,6 +63,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="+" subtitle="">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="99"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="plus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZHk-Cq-NMp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qn3-h7-FQw">
                                 <rect key="frame" x="24" y="714" width="96" height="104"/>
@@ -68,6 +74,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="-">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="99"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="minus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MHm-Z3-KWZ"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="История изменений:" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="86k-7m-D1q">
                                 <rect key="frame" x="48" y="358" width="296" height="44"/>
