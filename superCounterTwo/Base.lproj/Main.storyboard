@@ -36,7 +36,7 @@
                                     <fragment content="add/subtract">
                                         <attributes>
                                             <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="27" name=".SFNS-Regular"/>
+                                            <font key="NSFont" metaFont="system" size="27"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -78,8 +78,8 @@
                                     <action selector="minus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MHm-Z3-KWZ"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="История изменений:" borderStyle="roundedRect" textAlignment="center" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="86k-7m-D1q">
-                                <rect key="frame" x="48" y="358" width="296" height="44"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="История изменений:" borderStyle="bezel" textAlignment="center" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="86k-7m-D1q">
+                                <rect key="frame" x="16" y="268" width="361" height="333"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="30"/>
                                 <textInputTraits key="textInputTraits"/>
