@@ -9,21 +9,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var counter: UILabel! // counter field
-    @IBOutlet weak var history: UITextField! // change history text field
-    @IBOutlet weak var reset: UIButton! // reset button
-    @IBOutlet weak var minus: UIButton! //button to reduce the counter
-    @IBOutlet weak var plus: UIButton! // add counter button
+    @IBOutlet weak private var counter: UILabel! // counter field
+    @IBOutlet weak private var history: UITextField! // change history text field
+    @IBOutlet weak private var reset: UIButton! // reset button
+    @IBOutlet weak private var minus: UIButton! //button to reduce the counter
+    @IBOutlet weak private var plus: UIButton! // add counter button
     var a = 0 // variable for the counter
     override func viewDidLoad() {
         super.viewDidLoad()
         counter.text = "Значение счётчика: \(a)"
-        // Do any additional setup after loading the view.
     }
     var b = NSDate() //variable for displaying the current date and time
     
     
-    @IBAction func reset(_ sender: Any) {
+    @IBAction private func reset(_ sender: Any) {
         a = 0
         history.text = "\(b) значение сброшено"
         viewDidLoad()
@@ -31,7 +30,7 @@ class ViewController: UIViewController {
     //actions when pressing the reset button
     
     
-    @IBAction func plus(_ sender: Any) {
+    @IBAction private func plus(_ sender: Any) {
         a += 1
         history.text = "\(b) значение изменено на +1"
         viewDidLoad()
@@ -39,7 +38,7 @@ class ViewController: UIViewController {
     
     // actions when clicking on the plus button
     
-    @IBAction func minus(_ sender: Any) {
+    @IBAction private func minus(_ sender: Any) {
         a -= 1
         history.text = "\(b) значение изменено на -1"
         if a < 0 {
