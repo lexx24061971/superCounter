@@ -23,18 +23,22 @@ class ViewController: UIViewController {
 
     @IBAction func reset(_ sender: Any) {
         a = 0
+        history.text = "значение сброшено"
         viewDidLoad()
     }
     
     @IBAction func plus(_ sender: Any) {
         a += 1
+        history.text = "значение изменено на +1"
         viewDidLoad()
     }
     
     @IBAction func minus(_ sender: Any) {
         a -= 1
+        history.text = "значение изменено на -1"
         if a < 0 {
             a = 0
+            history.text = "попытка уменьшить значение счётчика ниже 0"
         }
         viewDidLoad()
     }
