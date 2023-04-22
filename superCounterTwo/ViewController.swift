@@ -47,12 +47,12 @@ class ViewController: UIViewController {
         }
         private func reductionCounter() {
             counterValue -= 1
-            counter.text = "Значение счётчика: \(counterValue)"
             history.text = "\(dateAndTime) значение изменено на -1"
             if counterValue < 0 {
                 counterValue = 0
                 history.text = "\(dateAndTime) попытка уменьшить значение счётчика ниже 0"
             }
+            counter.text = "Значение счётчика: \(counterValue)"
         }
     
 }
