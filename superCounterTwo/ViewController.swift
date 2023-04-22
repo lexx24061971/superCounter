@@ -33,6 +33,9 @@ class ViewController: UIViewController {
     
     @IBAction func minus(_ sender: Any) {
         a -= 1
+        if a < 0 {
+            a = 0
+        }
         viewDidLoad()
     }
     
