@@ -20,28 +20,35 @@ class ViewController: UIViewController {
         counter.text = "Значение счётчика: \(a)"
         // Do any additional setup after loading the view.
     }
-
+    var b = NSDate() //variable for displaying the current date and time
+    
+    
     @IBAction func reset(_ sender: Any) {
         a = 0
-        history.text = "значение сброшено"
+        history.text = "\(b) значение сброшено"
         viewDidLoad()
     }
+    //actions when pressing the reset button
+    
     
     @IBAction func plus(_ sender: Any) {
         a += 1
-        history.text = "значение изменено на +1"
+        history.text = "\(b) значение изменено на +1"
         viewDidLoad()
     }
     
+    // actions when clicking on the plus button
+    
     @IBAction func minus(_ sender: Any) {
         a -= 1
-        history.text = "значение изменено на -1"
+        history.text = "\(b) значение изменено на -1"
         if a < 0 {
             a = 0
-            history.text = "попытка уменьшить значение счётчика ниже 0"
+            history.text = "\(b) попытка уменьшить значение счётчика ниже 0"
         }
         viewDidLoad()
     }
+    // actions when clicking on the minus button
     
 }
 
